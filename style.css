@@ -1,0 +1,146 @@
+body{
+    background-color:#14244C ;
+}
+ul {
+    position: relative;
+    top: -7px;
+    right: 8px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: #f0ebeb;
+  }
+  
+  li {
+    padding-right: 10px;
+    top:10px;
+    word-spacing: 20px;
+    float: left;
+    position: relative;
+    left: 80vh;
+  }
+  
+  li a {
+    padding-right: 10px;
+    top: -3px;
+    position: relative;
+    left: -95px;
+    font-size: larger;
+    display: block;
+    color: rgb(24, 37, 187);
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    font-family: sans-serif; 
+    text-decoration: none;
+  }
+  li a:hover {
+    background-color: #d7d3d3;
+  }
+button {
+    left: 120vh;
+    border-radius: 10px;
+    position: relative;
+    top:-1px;
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    box-shadow: 0 6px #2e7031; /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+h1 {
+    color: white;
+    position: absolute;
+    left: 124vh;
+    top: 37vh;
+    font-size: 40px;
+    animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect for h1 */
+    opacity: 0; /* Initially hidden */
+}
+
+
+h1 span {
+    animation: slideIn 2s ease-in-out 1s forwards; /* Slide-in effect with 1s delay */
+    display: inline-block;
+    opacity: 0; /* Initially hidden */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Slide-in from the right animation for span */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(50px); /* Starts off slightly to the right */
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0); /* Ends in its original position */
+    }
+}
+input{
+    position: absolute;
+    right: 10vh;
+}
+
+.styled-button {
+    position: absolute;
+    top:54vh;
+    background-color: #0875e3; 
+    color: white;             
+    padding: 15px 30px;        
+    font-size: 16px;           
+    border: none;              
+    border-radius: 5px;        
+    cursor: pointer;           
+    box-shadow: 0 4px #2e7031; 
+    transition: all 0.3s ease; 
+}
+
+/* Button hover effect */
+.styled-button:hover {
+    background-color: #0875e3; /* Darker green on hover */
+    box-shadow: 0 6px #0875e3; /* Deeper shadow on hover */
+    transform: translateY(-2px); /* Slight lift on hover */
+}
+
+.styled-button:active {
+    background-color: #3e8e41; 
+    box-shadow: 0 2px #2e7031; 
+    transform: translateY(2px); 
+}
+.img1 {
+    position: absolute;           /* Fix the image to a specific part of the screen */
+    left: -44vh;                      /* Align it to the left */
+    top: -5vh;                       /* Start from the top */
+    width: 158vh;                  /* Set a width that fits the design (half-circle aspect) */
+    height: 103vh;                 /* Equal height to make it square before applying border-radius */
+    border-radius: 50vh;/* Make the bottom right half-circle */
+    overflow: hidden;             /* Hide any overflow */       /* Make sure the image fills the container without distortion */
+    z-index: -1;                  /* Push the image behind other content */
+}
+
+
