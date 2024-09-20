@@ -1,5 +1,7 @@
 body{
     background-color:#14244C ;
+    padding: 0;
+    margin: 0;
 }
 ul {
     position: relative;
@@ -7,7 +9,7 @@ ul {
     right: 8px;
     list-style-type: none;
     margin: 0;
-    padding: 0px;
+    padding: 4px;
     overflow: hidden;
     background-color: #f0ebeb;
   }
@@ -42,7 +44,7 @@ button {
     left: 120vh;
     border-radius: 10px;
     position: relative;
-    top:-1px;
+    top:3px;
     background-color: #04AA6D;
     border: none;
     color: white;
@@ -71,9 +73,8 @@ h1 {
     top: 37vh;
     font-size: 40px;
     animation: fadeIn 2s ease-in-out forwards; /* Fade-in effect for h1 */
-    opacity: 0; /* Initially hidden */
+    opacity: 0; 
 }
-
 
 h1 span {
     animation: slideIn 2s ease-in-out 1s forwards; /* Slide-in effect with 1s delay */
@@ -90,7 +91,7 @@ h1 span {
     }
 }
 
-/* Slide-in from the right animation for span */
+
 @keyframes slideIn {
     0% {
         opacity: 0;
@@ -107,6 +108,7 @@ input{
 }
 
 .styled-button {
+    left: 130vh;
     position: absolute;
     top:54vh;
     background-color: #0875e3; 
@@ -120,7 +122,7 @@ input{
     transition: all 0.3s ease; 
 }
 
-/* Button hover effect */
+
 .styled-button:hover {
     background-color: #0875e3; /* Darker green on hover */
     box-shadow: 0 6px #0875e3; /* Deeper shadow on hover */
@@ -132,12 +134,13 @@ input{
     box-shadow: 0 2px #2e7031; 
     transform: translateY(2px); 
 }
-.img1 {
+.img1{
+    display: block;
     position: absolute;           /* Fix the image to a specific part of the screen */
     left: -44vh;                      /* Align it to the left */
     top: -5vh;                       /* Start from the top */
-    width: 158vh;                  /* Set a width that fits the design (half-circle aspect) */
-    height: 103vh;                 /* Equal height to make it square before applying border-radius */
+    width: 162vh;                  /* Set a width that fits the design (half-circle aspect) */
+    height: 104vh;/* Equal height to make it square before applying border-radius */
     border-radius: 50vh;/* Make the bottom right half-circle */
     overflow: hidden;             /* Hide any overflow */       /* Make sure the image fills the container without distortion */
     z-index: -1;                  /* Push the image behind other content */
