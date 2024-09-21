@@ -11,7 +11,7 @@ ul {
     margin: 0;
     padding: 4px;
     overflow: hidden;
-    background-color: #f0ebeb;
+    background-color: white;
   }
   
   li {
@@ -140,7 +140,7 @@ input{
     left: -44vh;                      /* Align it to the left */
     top: -5vh;                       /* Start from the top */
     width: 162vh;                  /* Set a width that fits the design (half-circle aspect) */
-    height: 104vh;/* Equal height to make it square before applying border-radius */
+    height: 105vh;/* Equal height to make it square before applying border-radius */
     border-radius: 50vh;/* Make the bottom right half-circle */
     overflow: hidden;             /* Hide any overflow */       /* Make sure the image fills the container without distortion */
     z-index: -1;                  /* Push the image behind other content */
