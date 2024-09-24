@@ -108,7 +108,7 @@ input{
 }
 
 .styled-button {
-    left: 130vh;
+    left: 124vh;
     position: absolute;
     top:54vh;
     background-color: #0875e3; 
@@ -124,7 +124,7 @@ input{
 
 
 .styled-button:hover {
-    background-color: #0875e3; /* Darker green on hover */
+    background-color: #0875e3; 
     box-shadow: 0 6px #0875e3; /* Deeper shadow on hover */
     transform: translateY(-2px); /* Slight lift on hover */
 }
