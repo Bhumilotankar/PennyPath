@@ -1,0 +1,52 @@
+/* Style for the employee management table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none; /* Remove default borders */
+}
+
+th, td {
+  padding: 15px;
+  text-align: center;
+  vertical-align: middle;
+  border: 1px solid white; /* White borders for the rest */
+}
+
+th {
+  background-color: #2196F3; /* Blue header background */
+  color: white;
+  border-top: 4px solid #2196F3; /* Blue top border */
+}
+
+td {
+  background-color: #f9f9f9; /* White/Light gray background for table cells */
+  color: black; /* Text color */
+}
+
+.employee-photo {
+  width: 50px;
+  height: 50px;
+}
+
+.btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  margin: 0 5px;
+}
+
+.btn-success {
+  background-color: #2196F3; /* Blue button background */
+  border-color: #2196F3;     /* Blue button border */
+  color: white;              /* White button text */
+}
+
+.btn-danger {
+  background-color: #f44336;
+  border-color: #f44336;
+  color: white; /* White button text */
+}
+
+/* Table Row Hover Effect */
+tr:hover {
+  background-color: #f1f1f1;
+}

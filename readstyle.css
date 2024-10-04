@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #000066; /* Blue color */
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    opacity: 0; /* Start as invisible */
+    transform: translateY(-20px); /* Start slightly above */
+    animation: slideDown 1s ease-in-out forwards; /* Apply sliding animation */
+}
+
+.header-subtitle {
+    font-size: 1.5rem; /* Adjust font size if needed */
+    opacity: 0; /* Start as invisible */
+    transform: translateY(-20px); /* Start slightly above */
+    animation: slideDown 1s ease-in-out forwards; /* Apply sliding animation */
+    animation-delay: 0.5s; /* Delay for subtitle animation */
+}
+
+/* Animation for sliding down */
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start higher up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Styles for the user flow chart */
+.flow-container {
+    margin-top: 40px;
+}
+
+.flow-chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.flow-step {
+    padding: 15px 25px;
+    background-color: #000066; /* Blue background color */
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    width: 45%; /* Set width for left/right alignment */
+    opacity: 0; /* Start as invisible */
+    transform: translateY(-20px); /* Start slightly above */
+}
+
+/* Arrow styling */
+.flow-arrow {
+    font-size: 2rem;
+    color: #000000; /* brown arrow color */
+}
+
+/* Animation for timeline */
+@keyframes timelineAnimation {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px); /* Start higher up */
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0); /* End at the original position */
+    }
+}
+
+/* Class to trigger the flow-step animation */
+.timeline-animation {
+    animation: timelineAnimation 0.6s forwards; /* Timeline animation */
+}

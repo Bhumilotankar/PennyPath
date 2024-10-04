@@ -1,0 +1,131 @@
+/* Full-height sidebar */
+.sidebar {
+    background-color: #457b9d;
+    width: 250px;
+    height: 100vh; /* Full viewport height */
+    position: fixed;
+    left: 0;
+    top: 0;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li.active, .sidebar ul li:hover {
+    background-color: #1d3557;
+}
+
+.main-content {
+    margin-left: 250px; /* Offset by the width of the sidebar */
+    padding: 40px;
+    box-sizing: border-box;
+    width: calc(100% - 250px);
+}
+
+/* Profile Section */
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.profile-pic img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.profile-details .personal-info,
+.profile-details .info-block,
+.profile-details .address-block {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profile-details h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* Preferences Section */
+.preferences-block {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.preferences-block select {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.preferences-block label {
+    font-size: 16px;
+}
+
+/* General Section Styling */
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Modals */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #1d3557;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #457b9d;
+}

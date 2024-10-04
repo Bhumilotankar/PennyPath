@@ -5,27 +5,60 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PennyPath</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="home.css" />
 </head>
 
 <body>
-  <header>
-    <h1>Welcome to PennyPath</h1>
-    <nav>
-      <ul>
-        <li><a href="home.html">Home</a></li>
-        <li><a href="login.html">Login</a></li> <!-- Link to the new login page -->
-        <li><a href="#">About Us</a></li>
-      </ul>
-    </nav>
+
+  <header class="header">
+    <a href="#" class="logo">PennyPath</a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="login.html">
+      <button class="button" role="button"><span class="text">Login/Signup</span></button></a>
+      </nav>
   </header>
 
-  <section>
-    <h2>Main Page Content</h2>
-    <p>This is the main content of the website. To log in, click the link in the menu.</p>
+  <section> 
+   <!-- home -->
+   <section class="home" id="home">
+     <div class="home-content">
+      <img src="images/img1.jpg" class="img1">
+      <h1>Managing Money <span><br>Made Simple</span></h1>
+      <br>
+      <button class="styled-button" onclick="location.href='readmore.html'">Read More</button>
+    </div>
   </section>
 
-  <script src="script.js"></script>
-</body>
+  
+<!-- about -->
+<section class="about" id="about">
+   <div class="about-content">
+    <br>  <h2><u>About PennyPath</u></h2>
+    <h4>PennyPath provides a clear and detailed view of your financial transactions. It automatically categorizes expenses, tracks income, and offers real-time insights into your spending habits. 
+      By using this tool, you can monitor your finances effortlessly, making it easier to stay within budget and avoid unnecessary expenses.</h4>
+   </div>
+</section>
 
+<!-- services -->
+<section class="services" id="services">
+  <div class="service-content">
+   <br>  <h2><u>Services</u></h2>
+   <h4>Monitors User's Income, Expenses,</h4>
+   <h4>Tips about saving money</h4>
+   <h4>Providing insights </h4>
+   <h4>Graphs, User stats</h4>
+  </div>
+</section>
+
+</section>
+
+<!-- footer -->
+<script src="JS/script.js"></script>
+
+</body>
 </html>

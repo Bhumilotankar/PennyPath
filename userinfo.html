@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="userstyle.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar full-height">
+            <h2>Hello Bhumi</h2>
+            
+            <ul>
+                <li id="profile-btn" class="active">My Profile</li>
+                <!-- <li id="preferences-btn">Preferences</li> -->
+                <li id="account-settings-btn">Account Settings</li>
+                <li id="billing-history-btn">Billing History</li>
+                <li id="support-btn">Support</li>
+            </ul>
+        </aside>
+
+        <main class="main-content">
+            <!-- Profile Section -->
+            <section id="profile-section" class="section active">
+                <div class="profile-header">
+                    <h2>My Profile</h2>
+                </div>
+                <div class="profile-details">
+                    <!-- Profile Picture -->
+                    <div class="profile-pic">
+                        <img src="D:\project pp\userimg.jpg" alt="Profile Picture" class="profile-image">
+                    </div>
+                    <div class="personal-info">
+                        <h3>Your Name</h3>
+                        <p>Location: Your City, Your Country</p>
+                    </div>
+                    <div class="info-section">
+                        <div class="info-block">
+                            <h4>Personal Information</h4>
+                            <p><strong>First Name:</strong></p>
+                            <p>Your First Name</p>
+                            <p><strong>Last Name:</strong></p>
+                            <p>Your Last Name</p>
+                            <p><strong>Email Address:</strong></p>
+                            <p>your-email@example.com</p>
+                            <p><strong>Phone:</strong></p>
+                            <p>(123) 456-7890</p>
+                            <p><strong>Bio:</strong></p>
+                            <p>Your Profession or Title</p>
+                            <button>Edit</button>
+                        </div>
+                        <div class="address-block">
+                            <h4>Address</h4>
+                            <p><strong>Country:</strong></p>
+                            <p>Your Country</p>
+                            <p><strong>City/State:</strong></p>
+                            <p>Your City, Your State</p>
+                            <p><strong>Postal Code:</strong></p>
+                            <p>Your Postal Code</p>
+                            <p><strong>TAX ID:</strong></p>
+                            <p>Your Tax ID</p>
+                            <button>Edit</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preferences Section -->
+            <section id="preferences-section" class="section">
+                <h2>Preferences</h2>
+                <div class="preferences-block">
+                    <h4>Language</h4>
+                    <select>
+                        <option>English</option>
+                        <option>Spanish</option>
+                        <option>French</option>
+                    </select>
+                    <h4>Currency</h4>
+                    <select>
+                        <option>USD</option>
+                        <option>EUR</option>
+                        <option>INR</option>
+                    </select>
+                    <h4>Notification</h4>
+                    <label><input type="checkbox"> Email Notifications</label><br>
+                    <label><input type="checkbox"> SMS Notifications</label>
+                </div>
+            </section>
+
+            <!-- Account Settings Section -->
+            <section id="account-settings-section" class="section">
+                <h2>Account Settings</h2>
+                <ul class="settings-list">
+                    <li><button id="change-password-btn">Change Password</button></li>
+                    <li><button id="delete-account-btn">Delete Account</button></li>
+                    <li><button id="deactivate-account-btn">Deactivate Account</button></li>
+                </ul>
+            </section>
+
+            <!-- Billing History Section -->
+            <section id="billing-history-section" class="section">
+                <h2>Billing History</h2>
+                <p>Here you can view your billing history...</p>
+            </section>
+
+            <!-- Support Section -->
+            <section id="support-section" class="section">
+                <h2>Support</h2>
+                <p>If you need assistance, please contact our support team:</p>
+                <button>Contact Support</button>
+            </section>
+        </main>
+
+        <!-- Password Change Page -->
+        <div id="password-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Change Password</h2>
+                <form>
+                    <label for="old-password">Old Password:</label>
+                    <input type="password" id="old-password" required><br>
+                    
+                    <label for="new-password">New Password:</label>
+                    <input type="password" id="new-password" required><br>
+                    
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" required><br>
+                    
+                    <button type="submit">Submit</button>
+                </form>
+                <p><a href="#">Forgot Password?</a></p>
+                <button id="close-password-modal">Close</button>
+            </div>
+        </div>
+
+        <!-- Delete/Deactivate Account Prompt -->
+        <div id="confirmation-modal" class="modal hidden">
+            <div class="modal-content">
+                <h2>Are you sure?</h2>
+                <button id="confirm-delete-deactivate">Yes</button>
+                <button id="cancel-delete-deactivate">No</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="userscript.js"></script>
+</body>
+</html>

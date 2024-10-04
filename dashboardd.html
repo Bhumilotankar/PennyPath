@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <div class="sidebar" id="sidebar">
+    <h2>PennyPath</h2>
+    <a href="#">DashBoard</a>
+    <a href="#"><i class="fa-solid fa-chart-column"></i>  Charts</a>
+    <a href="chat.html"><i class="fa-regular fa-message"></i>  Chats & Messages</a>
+    <a href="userinfo.html"><i class="fa-regular fa-user"></i>  User Profile</a>
+  </div>
+  
+  <button class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">☰</button>
+
+  <div class="main-content" id="main-content">
+    <div class="header">
+      <h2>Good Morning, Bhumi</h2>
+      <div class="icons">
+        <input type="text" id="search-bar" placeholder="Search" onkeyup="filterSidebar()">
+        <span class="icon">🔔</span>
+        <span class="icon">⚙️</span>
+      </div>
+    </div>
+
+    <div class="cards-container">
+      <div class="card">
+        <p>Income</p>
+        <h3>$<input type="number" class="input" id="income"></h3>
+      </div>
+      <div class="card">
+        <p>Balance</p>
+        <h3>$<input type="number"class="input"  id="balance"></h3>
+      </div>
+      <div class="card">
+        <p>Savings</p>
+        <h3>$</h3>
+      </div>
+  </div>
+
+  <div class="card-wide1">
+     <button onclick="location.href='http://localhost/pennypath/revenue.php'">Revenue</button>
+  </div>
+  <div class="card-wide2">
+    <button onclick="location.href='expert.html'">Consult a Finance Expert</button>
+  </div>
+  <div class="card-wide3">
+    <button onclick="location.href='monthly report.html'">Monthly Report <span>⬇️</span></button>
+  </div>
+  <div class="card-wide4">
+    <button>Efficiency PieChart</button>
+  </div>
+
+  <script>
+    function toggleSidebar() {
+      var sidebar = document.getElementById("sidebar");
+      var mainContent = document.getElementById("main-content");
+      var toggleButton = document.getElementById("sidebar-toggle");
+
+      // Toggle the sidebar's width and the button text
+      if (sidebar.style.width === "200px") {
+        sidebar.style.width = "0";
+        mainContent.style.marginLeft = "0";
+        toggleButton.innerHTML = "☰";
+      } else {
+        sidebar.style.width = "200px";
+        mainContent.style.marginLeft = "200px";
+        toggleButton.innerHTML = "✖";
+      }
+    }
+
+    function filterSidebar() {
+        // Get the search input value and convert it to lowercase
+        var input = document.getElementById('search-bar');
+        var filter = input.value.toLowerCase();
+
+        // Get all the links in the sidebar
+        var sidebarLinks = document.querySelectorAll('.sidebar a');
+
+        // Loop through the links and hide/show based on search input
+        sidebarLinks.forEach(function(link) {
+            var text = link.textContent || link.innerText; // Get the text of the link
+            // Check if the link text includes the filter text
+            link.classList.toggle('hidden', !text.toLowerCase().includes(filter));
+        });
+    }
+  </script>
+</body>
+</html>

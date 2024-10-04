@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Document</title>
+</head>
+<body>
+ <!-- header -->
+  <header class="header">
+    <a href="#" class="logo">PennyPath</a>
+    <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+    <nav class="navbar">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#stats">Stats</a>
+      <a href="login.html">
+      <button class="button" role="button">Login/Signup</button></a>
+      </nav>
+  </header>
+   
+ 
+</body>
+</html>
+
